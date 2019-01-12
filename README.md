@@ -5,8 +5,8 @@
 Command-Line Startup Instructions:
 ----------------------------------
 
-git clone https://github.com/carsonwack/node-and-SQL.git
+1. git clone https://github.com/carsonwack/node-and-SQL.git
 
-cd node-and-SQL
+2. cd node-and-SQL
 
-node bamazon.js
+3. node bamazon.js
