@@ -10,6 +10,7 @@ Command-Line Startup Instructions:
 1. git clone https://github.com/carsonwack/node-and-SQL.git
 
 -> Execute commands in schema.sql from MySQLWorkbench (sets up database and table)
+
 -> Execute commands in seeds.sql from MySQLWorkbench (populates table)
 
 2. cd node-and-SQL
