@@ -1,6 +1,7 @@
 # node-and-SQL
+Use this app from the command-line to:
 
-Allows user to make purchases from a database filled with 10 items.
+Make purchases from a database filled with 10 items.
 
 Command-Line Startup Instructions:
 ----------------------------------
