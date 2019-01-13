@@ -2,16 +2,14 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 
+// connection to mySQL
 var connection = mysql.createConnection({
     host: "localhost",
 
-    // Your port; if not 3306
     port: 3306,
 
-    // Your username
     user: "root",
 
-    // Your password
     password: "Allstar5",
     database: "bamazon_DB"
 });
@@ -76,7 +74,7 @@ function promptUser() {
             }
             let currentStock = res[0].stock_quantity;
             if (currentStock < answer.unitsSelected) {
-                console.log("Insufficient Quantity!");
+                console.log("\n\nInsufficient Quantity!\n\n");
                 promptUser();
                 console.log('\n\n');
             }
@@ -107,7 +105,9 @@ function promptUser() {
                     let price = res[0].price;
                     // Rounds to 2 decimal places
                     let totalPrice = Number(price * answer.unitsSelected).toFixed(2);
-                    console.log(`Total Cost: ${totalPrice}`);
+                    console.log(`Total Cost: ${totalPrice}\n\n`);
+                    postPurchase();
+
                 });
             }
 
@@ -118,20 +118,25 @@ function promptUser() {
 };
 
 
+function postPurchase() {
+    inquirer.prompt([
+        {
+            type: 'confirm',
+            name: 'anotherPurchase',
+            message: 'Do you want to make another purchase?'
+        }
+    ]).then(function (answer) {
+        if (answer.anotherPurchase) {
+            console.log("\n\n")
+            promptUser();
+        }
+        else {
+            console.log("\n\nGoodbye, thanks for shopping!\n\n");
+            process.exit();
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    });
+}
 
 
 
