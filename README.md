@@ -1,6 +1,6 @@
 # node-and-SQL
 
-Allows user to shop from a database filled with 10 items
+Allows user to make purchases from a database filled with 10 items.
 
 Command-Line Startup Instructions:
 ----------------------------------
