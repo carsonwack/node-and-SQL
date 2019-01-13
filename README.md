@@ -16,7 +16,7 @@ Command-Line Startup Instructions:
 
 2. cd node-and-SQL
 
-3. node bamazon.js
+3. node bamazonCustomer.js
 
 
 Example runthrough via screenshots:
