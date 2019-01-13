@@ -4,12 +4,17 @@
 
 Command-Line Startup Instructions:
 ----------------------------------
+1. Execute commands in schema.sql  (sets up database and table)
 
-1. git clone https://github.com/carsonwack/node-and-SQL.git
+2. Execute commands in seeds.sql   (populates table)
 
-2. cd node-and-SQL
+3. git clone https://github.com/carsonwack/node-and-SQL.git
 
-3. node bamazon.js
+4. cd node-and-SQL
+
+5. node bamazon.js
+
+6. run customerview
 
 
 Example runthrough via screenshots:
